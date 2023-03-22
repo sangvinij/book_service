@@ -130,6 +130,6 @@ dmypy.json
 .pyre/
 
 # Idea
-.idea
 /client/cache/
 /server/cafe/media/
+/book/media/
