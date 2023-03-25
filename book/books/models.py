@@ -9,7 +9,7 @@ class Book(models.Model):
     cover = models.ImageField(upload_to='images/books', null=True, blank=True)
     genre = models.ForeignKey('genre', on_delete=models.CASCADE, related_name='book_genre')
     theme = models.ManyToManyField('theme', related_name='book_theme')
-    year_published = models.CharField(max_length=4, validators=[year_regex])
+    year_published = models.CharField(max_length=4, validators=[year_regex], null=True, blank=True)
     description = models.TextField(max_length=2000, null=True, blank=True)
 
     def __str__(self):
