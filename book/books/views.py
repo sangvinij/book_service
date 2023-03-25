@@ -1,9 +1,9 @@
 from rest_framework import viewsets
 
 from .models import Author, Book, Genre, Theme
-from .serializers import GetBookSerializer, AddBookSerializer,\
-                        GenreSerializer, ThemeSerializer, \
-                        AuthorSerializer
+from .serializers import AddBookSerializer, AuthorSerializer, \
+                         GenreSerializer, GetBookSerializer, \
+                         ThemeSerializer
 
 
 class AuthorViewSet(viewsets.ModelViewSet):

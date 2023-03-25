@@ -40,5 +40,5 @@ class GenreAdmin(admin.ModelAdmin):
 
 
 @admin.register(Theme)
-class GenreAdmin(admin.ModelAdmin):
+class ThemeAdmin(admin.ModelAdmin):
     search_fields = ('theme_name', )
