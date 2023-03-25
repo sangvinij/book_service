@@ -29,4 +29,5 @@ jobs:
 
         - name: Run tests
           run: |
+              cd book
               python manage.py test
