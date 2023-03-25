@@ -22,11 +22,9 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.flake8]
-    exclude = ".venv"
+    exclude = [".venv", "./book/books/migrations/"]
     max-line-length = 120
     extend-ignore = ["D100", "D101", "D102", "D103", "D104"]
     per-file-ignores = """
-        ./historian/tests.py: E712
-        ./historian/migrations/*: I100
-        ./manage.py: Q000
+        ./book/manage.py: Q000
     """

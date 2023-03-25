@@ -1,7 +1,8 @@
-from django.contrib.auth.models import User
 from django.urls import reverse
+
 from rest_framework import status
 from rest_framework.test import APITestCase
+
 from .models import Author, Book, Genre, Theme
 
 
@@ -74,4 +75,3 @@ class BookTests(APITestCase):
 
         response_delete = self.client.delete(url)
         self.assertEqual(response_delete.status_code, status.HTTP_204_NO_CONTENT)
-
