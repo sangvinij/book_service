@@ -12,7 +12,6 @@ router.register(r'book_genres', GenreViewSet)
 router.register(r'book_themes', ThemeViewSet)
 router.register(r'book_authors', AuthorViewSet)
 
-print(router.urls)
 urlpatterns = [
     path(r'api/v1/', include(router.urls))
 ]
