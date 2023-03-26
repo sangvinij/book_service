@@ -1,10 +1,12 @@
 # book_service
 
+The project is written in Python 3.10
+
 How to run project:
 1. clone this repository
 2. open project folder in IDE
 3. run in IDE terminal: 
-	- poetry update
+	- poetry update (https://python-poetry.org/docs/ - if you don't have poetry)
 	- cd book
 	- python manage.py makemigrations
 	- python manage.py migrate
