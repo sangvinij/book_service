@@ -1,14 +1,14 @@
 # book_service
-
+Compact web-service that allows working with books and authors
 The project is written in Python 3.10
 
-How to run project:
+## How to run project:
 1. clone this repository
 2. open project folder in IDE
-3. run in IDE terminal: 
-	- poetry update (https://python-poetry.org/docs/ - if you don't have poetry)
+3. run in terminal: 
+	- poetry shell (https://python-poetry.org/docs/ - if you don't have poetry)
+	- poetry install
 	- cd book
-	- python manage.py makemigrations
 	- python manage.py migrate
 	- python manage.py runserver
 4. use endpoints to make requests:
